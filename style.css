@@ -1,0 +1,48 @@
+html {
+  overflow: hidden;
+}
+
+body {
+ background-color: #544f4a;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.board {
+  position: relative;
+  width: 22em;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.row {
+  float: left;
+}
+
+.row:first-child .square {
+  border-top: 0;
+}
+
+.square {
+  color: #605B56 ;
+  border-color: #605B56;
+  font-size: 6em;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1.2em;
+  float: left;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  text-align: center;
+  cursor: default;
+}
+
+.square:last-child {
+  border-right: 0px;
+}
